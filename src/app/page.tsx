@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AsciiBackground from "@/components/AsciiBackground";
 import HalftonePortrait from "@/components/HalftonePortrait";
 import PreviewLink from "@/components/PreviewLink";
 import SiteFooter from "@/components/SiteFooter";
@@ -8,9 +9,10 @@ import { featuredProjects } from "@/content/projects";
 
 export default function Home() {
   return (
-    <>
-      <main className="mx-auto flex w-full max-w-[1120px] flex-1 flex-wrap items-center justify-center gap-[72px] px-8 pb-10 pt-16 md:pt-[88px]">
-        <div className="flex max-w-[440px] flex-[1_1_360px] flex-col items-center">
+    <div className="relative flex flex-1 flex-col overflow-hidden">
+      <AsciiBackground />
+      <main className="relative z-10 mx-auto flex w-full max-w-[1120px] flex-1 flex-wrap items-center justify-center gap-[72px] px-8 pb-10 pt-16 md:pt-[88px]">
+        <div data-ascii-clear className="flex max-w-[440px] flex-[1_1_360px] flex-col items-center">
           <HalftonePortrait
             src="/portrait.png"
             label="Halftone portrait of Ari Shah"
@@ -18,7 +20,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="flex max-w-[470px] flex-[1_1_420px] flex-col gap-[30px]">
+        <div data-ascii-clear className="flex max-w-[470px] flex-[1_1_420px] flex-col gap-[30px]">
           <header className="flex flex-col gap-2.5">
             <h1 className="text-[44px] font-medium leading-[1.05] tracking-[-0.03em] sm:text-[52px]">
               Ari Shah
@@ -90,7 +92,7 @@ export default function Home() {
           </nav>
         </div>
       </main>
-      <SiteFooter />
-    </>
+      <SiteFooter className="relative z-10" asciiClear />
+    </div>
   );
 }
