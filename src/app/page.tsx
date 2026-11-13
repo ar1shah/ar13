@@ -26,7 +26,7 @@ export default function Home() {
               Ari Shah
             </h1>
             <p className="text-base">
-              Computer Science at <PreviewLink preview={previews.ucf}>UCF</PreviewLink>
+              CS at <PreviewLink preview={previews.ucf}>UCF</PreviewLink>
             </p>
           </header>
 
