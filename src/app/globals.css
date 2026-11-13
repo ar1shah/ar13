@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f3f1eb;
+  --color-card: #fbfaf7;
+  --color-ink: #1c1b19;
+  --color-body: #4a4740;
+  --color-muted: #6b675e;
+  --color-rule: #dedad0;
+  --color-edge: #e2ded4;
+  --color-underline: #c9c4b8;
+  --color-bullet: #9c978c;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+/* Underlined text link, used across the site */
+.link {
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-underline);
+  transition: border-color 150ms;
+}
+.link:hover,
+.link:focus-visible {
+  color: #000;
+  border-bottom-color: var(--color-ink);
+}
+
+li::marker {
+  color: var(--color-bullet);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Markdown posts */
+.prose-post {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--color-body);
+}
+.prose-post > * + * {
+  margin-top: 1.1em;
+}
+.prose-post h2 {
+  margin-top: 2em;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-ink);
+}
+.prose-post h3 {
+  margin-top: 1.6em;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-ink);
+}
+.prose-post a {
+  color: var(--color-ink);
+  border-bottom: 1px solid var(--color-underline);
+}
+.prose-post a:hover {
+  border-bottom-color: var(--color-ink);
+}
+.prose-post ul {
+  list-style: disc;
+  padding-left: 1.25em;
+}
+.prose-post ol {
+  list-style: decimal;
+  padding-left: 1.25em;
+}
+.prose-post code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  background: #e9e5dc;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+.prose-post pre {
+  background: #1c1b19;
+  color: #f3f1eb;
+  padding: 16px 18px;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.prose-post pre code {
+  background: none;
+  padding: 0;
+}
+.prose-post blockquote {
+  border-left: 2px solid var(--color-rule);
+  padding-left: 1em;
+  color: var(--color-muted);
+}
+.prose-post img {
+  border-radius: 8px;
+}
