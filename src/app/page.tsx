@@ -82,7 +82,7 @@ export default function Home() {
               Photos <ArrowRight />
             </Link>
             <a
-              href="/Ari_Shah_Resume.pdf"
+              href="https://drive.google.com/file/d/1_RYW-OTNTEly_w3Yfzmupm1qXxEf5TTp/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex min-h-11 items-center px-2 text-[13px] text-body underline underline-offset-4 hover:text-ink"
