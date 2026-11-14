@@ -5,14 +5,14 @@ import { projects } from "@/content/projects";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Things Ari Shah has built, from production tools to side quests.",
+  description: "Things Ari Shah has built.",
 };
 
 export default function ProjectsPage() {
   return (
     <PageShell
       title="Projects"
-      intro={<p>Things I’ve built, from production tools to side quests.</p>}
+      intro={<p>things I’ve built</p>}
       width="max-w-[760px]"
     >
       <section aria-label="All projects" className="flex flex-col border-b border-rule">
