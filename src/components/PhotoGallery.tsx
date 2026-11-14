@@ -51,9 +51,9 @@ export default function PhotoGallery({ photos }: { photos: Photo[] }) {
 
   return (
     <>
-      <section aria-label="Photo grid" className="columns-1 gap-4 sm:columns-2 lg:columns-3">
+      <section aria-label="Photo grid" className="grid grid-cols-1 items-start gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {photos.map((p, i) => (
-          <figure key={p.src} className="mb-4 break-inside-avoid">
+          <figure key={p.src} className="m-0">
             <button
               type="button"
               ref={(el) => {
