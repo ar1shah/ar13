@@ -73,6 +73,7 @@ export default function PhotoGallery({ photos }: { photos: Photo[] }) {
                 className="block h-auto w-full transition-transform duration-300 ease-out hover:scale-[1.02]"
               />
             </button>
+            {p.caption ? <figcaption className="mt-2 text-xs text-muted">{p.caption}</figcaption> : null}
           </figure>
         ))}
       </section>
@@ -87,18 +88,25 @@ export default function PhotoGallery({ photos }: { photos: Photo[] }) {
             shown ? "opacity-100" : "opacity-0"
           }`}
         >
-          <Image
-            key={current.src}
-            src={current.src}
-            alt={current.alt}
-            width={current.width}
-            height={current.height}
-            sizes="100vw"
+          <figure
             onClick={(e) => e.stopPropagation()}
-            className={`h-auto max-h-[86vh] w-auto max-w-[88vw] rounded-lg shadow-[0_30px_80px_-30px_rgba(28,27,25,0.55)] transition-transform duration-200 ease-out ${
+            className={`m-0 flex max-w-[88vw] flex-col items-center gap-3 transition-transform duration-200 ease-out ${
               shown ? "scale-100" : "scale-[0.97]"
             }`}
-          />
+          >
+            <Image
+              key={current.src}
+              src={current.src}
+              alt={current.alt}
+              width={current.width}
+              height={current.height}
+              sizes="100vw"
+              className="h-auto max-h-[80vh] w-auto max-w-full rounded-lg shadow-[0_30px_80px_-30px_rgba(28,27,25,0.55)]"
+            />
+            {current.caption ? (
+              <figcaption className="text-sm text-body">{current.caption}</figcaption>
+            ) : null}
+          </figure>
 
           <button
             ref={closeRef}
