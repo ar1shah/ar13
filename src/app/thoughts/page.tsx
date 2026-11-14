@@ -5,7 +5,7 @@ import { formatDate, getPosts } from "@/lib/posts";
 
 export const metadata: Metadata = {
   title: "Thoughts",
-  description: "Notes on product engineering, applied AI, and whatever Ari Shah is into lately.",
+  description: "What’s on Ari Shah’s mind.",
 };
 
 export default function ThoughtsPage() {
@@ -13,7 +13,7 @@ export default function ThoughtsPage() {
   return (
     <PageShell
       title="Thoughts"
-      intro={<p>Notes on product engineering, applied AI, and whatever I’m into lately.</p>}
+      intro={<p>what’s on my mind</p>}
     >
       {posts.length === 0 ? (
         <p className="border-t border-rule pt-6 text-[15px] text-muted">First post coming soon.</p>

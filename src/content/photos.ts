@@ -10,12 +10,34 @@ export type Photo = {
  * width/height are the file's pixel size (used to reserve space while loading).
  */
 export const photos: Photo[] = [
-  { src: "/photos/chihuahua.jpg", alt: "Chihuahua", width: 900, height: 1126 },
   {
-    src: "/photos/kitchen-laptop.jpg",
-    alt: "Laptop on a kitchen counter",
-    width: 900,
-    height: 1126,
+    src: "/photos/elephant.jpg",
+    alt: "Young elephant in tall grass, ears out and trunk raised",
+    width: 2576,
+    height: 1448,
   },
-  { src: "/photos/margarita.jpg", alt: "Margarita", width: 551, height: 690 },
+  {
+    src: "/photos/sundowner.jpg",
+    alt: "Drinks and chips on a wooden table at sunset on the savanna",
+    width: 2576,
+    height: 1450,
+  },
+  {
+    src: "/photos/lion-cubs.jpg",
+    alt: "Three lion cubs sitting on a log in green brush",
+    width: 2576,
+    height: 1448,
+  },
+  {
+    src: "/photos/topi.jpg",
+    alt: "Four topi antelope running in a line across golden grassland",
+    width: 2576,
+    height: 1448,
+  },
+  {
+    src: "/photos/leopard.jpg",
+    alt: "Close-up of a leopard yawning in a tree",
+    width: 2576,
+    height: 1448,
+  },
 ];
