@@ -41,6 +41,7 @@ export const projects: Project[] = [
       "A production-style ML platform that predicts UFC fight outcomes. The domain is the fights; the point is the infrastructure underneath.",
     tech: ["Python", "FastAPI", "Postgres", "Redis", "LightGBM", "Docker"],
     repo: "https://github.com/ar1shah/CageOps",
+    status: "In progress",
     featured: true,
   },
   {
@@ -62,23 +63,6 @@ export const projects: Project[] = [
       "Chrome extension that kills the popup tabs streaming and ad-heavy sites open behind your back.",
     tech: ["TypeScript", "Chrome Extensions API"],
     repo: "https://github.com/ar1shah/RedirectGuard",
-  },
-  {
-    slug: "ssh-portfolio",
-    name: "SSH portfolio",
-    year: "2026",
-    blurb:
-      "A terminal portfolio you can open over SSH, hosted on a Linux VPS with CI/CD.",
-    tech: ["Go", "Bubble Tea", "Wish"],
-    repo: "https://github.com/ar1shah/SSH-portfolio",
-  },
-  {
-    slug: "apollo-bot",
-    name: "apollo-bot",
-    year: "2026",
-    blurb: "A Discord bot. Small, and it does what I needed it to do.",
-    tech: ["JavaScript", "Node.js", "Discord API"],
-    repo: "https://github.com/ar1shah/apollo-bot",
   },
 ];
 
