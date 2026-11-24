@@ -9,6 +9,8 @@
 
 </div>
 
+![Homepage](docs/home.png)
+
 **Tech:** TypeScript · Next.js 16 · React 19 · Tailwind CSS 4 · Vercel
 
 ---
@@ -40,11 +42,6 @@ I built it solo as a small Next.js app. Projects and photos are typed arrays in 
 | Content | [gray-matter](https://github.com/jonschlinkert/gray-matter) + [unified](https://unifiedjs.com/) | Parses post front matter and renders Markdown (with GFM tables) to HTML in `src/lib/posts.ts`. |
 | Fonts | [Inter](https://rsms.me/inter/) and [JetBrains Mono](https://www.jetbrains.com/lp/mono/) | Self-hosted `.woff2` files in `src/app/fonts/`. |
 | Hosting | [Vercel](https://vercel.com/) | Deployed from this repo. |
-
-## Screenshots
-
-**Homepage:** the halftone portrait, intro, work, featured projects, and links, with the ASCII background fading out around the content.
-![Homepage](docs/home.png)
 
 ## Engineering Decisions
 
